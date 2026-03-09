@@ -1,9 +1,10 @@
 from django.db import models
+import uuid
 
 # Create your models here.
 
 class Event(models.Model):
-    id = models.UUIDField(primary_key=True,editable=False)
+    id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
     name = models.CharField(max_length=255)
     description = models.TextField(null=True,blank=True)
     location = models.CharField(max_length=255)
