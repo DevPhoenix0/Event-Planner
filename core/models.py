@@ -12,3 +12,5 @@ class Event(models.Model):
     end_date = models.DateTimeField()
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField()
+    def __str__(self):
+        return self.name
