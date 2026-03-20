@@ -1,2 +1,3 @@
-__pycache__
+/core/__pycache__
+/event_planner_assignment/__pycache__
 db.sqlite3
